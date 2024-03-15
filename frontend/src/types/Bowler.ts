@@ -1,3 +1,4 @@
+//typescript file to allow the BowlingList to use this data
 export type Bowler = {
   bowlerId: number;
   bowlerLastName: string;

@@ -1,9 +1,12 @@
+//importing the correct things to be able to use these abilities
 import { useEffect, useState } from 'react';
 import { Bowler } from '../types/Bowler';
 
+//creating the bowlingList function with arrays
 function BowlingList() {
   const [bowlingData, setBowlingData] = useState<Bowler[]>([]);
 
+  //getting the api data
   useEffect(() => {
     const fetchBowlingData = async () => {
       const rsp = await fetch('http://localhost:5154/BowlingLeague');
@@ -13,6 +16,7 @@ function BowlingList() {
     fetchBowlingData();
   }, []);
 
+  //returning the table with the correct information from the API
   return (
     <>
       <div className="row">
@@ -47,4 +51,5 @@ function BowlingList() {
   );
 }
 
+//allowing App.tsx to use this function
 export default BowlingList;

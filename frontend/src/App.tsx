@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import BowlingList from './Bowling/BowlingList';
 
+//heading function per requirement that introduces the user to the site
 function Heading() {
   return (
     <h1>
@@ -12,6 +13,7 @@ function Heading() {
   );
 }
 
+//is called for the app to ru and includes the heading function and BowlingList to give the table data
 function App() {
   return (
     <div className="App">
