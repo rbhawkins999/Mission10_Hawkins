@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace API_Mission10.Models;
 
+//setting up the bowler class with the required info to display
 public partial class Bowler
 {
     [Key]

@@ -5,17 +5,20 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API_Mission10.Controllers
 {
+    //change the connection so that the url just has /BowlingLeague
     [Route("[controller]")]
     [ApiController]
     public class BowlingLeagueController : ControllerBase
     {
         private IBowlingRepository _bowlingRepository;
 
+        //setting up the constructor
         public BowlingLeagueController(IBowlingRepository temp)
         {
             _bowlingRepository = temp;
         }
 
+        //joining the two tables and filtering by the two teams needed
         [HttpGet]
         public IEnumerable<object> Get()
         {

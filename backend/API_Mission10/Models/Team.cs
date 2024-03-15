@@ -5,6 +5,7 @@ using System.Text.Json.Serialization;
 
 namespace API_Mission10.Models;
 
+//setting up the teams class with the required info to display
 public partial class Team
 {
     [Key]
