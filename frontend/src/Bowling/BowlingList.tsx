@@ -35,7 +35,7 @@ function BowlingList() {
           {bowlingData.map((b) => (
             <tr key={b.bowlerId}>
               <td>
-                {b.bowlerFirstName}, {b.bowlerMiddleInit}, {b.bowlerLastName}
+                {b.bowlerFirstName} {b.bowlerMiddleInit} {b.bowlerLastName}
               </td>
               <td>{b.teamName}</td>
               <td>
